@@ -1,12 +1,14 @@
 package com.wuyun.reggie.controller;
 
 import com.wuyun.reggie.common.R;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+import sun.rmi.runtime.Log;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
@@ -20,7 +22,7 @@ import java.util.UUID;
  * Author：wy
  * Date：2023/4/13
  */
-
+@Slf4j
 @RequestMapping("/common")
 @RestController
 public class CommonController {
