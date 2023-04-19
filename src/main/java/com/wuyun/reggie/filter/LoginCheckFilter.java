@@ -69,7 +69,7 @@ public class LoginCheckFilter implements Filter {
             Long userId = (Long) request.getSession().getAttribute("user");
             log.info("用户已经登录，id为 {}" ,userId);
             //将用户id传入线程存储
-            BaseContext.setCurrentId(userId) ;
+            BaseContext.setCurrentId(userId);
             //放行
             filterChain.doFilter(request,response);
             return;
