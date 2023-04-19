@@ -98,7 +98,7 @@ public class UserController {
      * @param request
      * @return
      */
-    @PostMapping("/logout")
+    @PostMapping("/loginout")
     public R<String> logout(HttpServletRequest request){
         //清理Session中保存的登录员工id
         request.getSession().removeAttribute("user");
